@@ -1,4 +1,4 @@
-package com.monte;
+package com.screenrecord;
 
 import org.monte.media.Format;
 import org.monte.media.FormatKeys;
@@ -51,13 +51,7 @@ public class ScreenRecorderUtil extends ScreenRecorder {
         screenRecorder.stop();
     }
 
-    public static void deleteRecords() {
-        File directory = new File("./test-recordings/");
-        File[] files = directory.listFiles();
-        for (File file : files) {
-            file.delete();
-        }
-    }
+
 
     @Override
     protected File createMovieFile(Format fileFormat) throws IOException {

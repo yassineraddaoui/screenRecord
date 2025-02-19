@@ -19,6 +19,9 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation group: 'com.github.stephenc.monte', name: 'monte-screen-recorder', version: '0.7.7.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
